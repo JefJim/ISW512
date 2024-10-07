@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./stylesLogin.css">
+    <script src="index.js" async></script>
+    <script>
+        function validarLogin() {
+            // Obtener valores de los campos
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Validar contraseña mínima de 8 caracteres
+            if (password.length < 8) {
+                alert("La contraseña debe tener al menos 8 caracteres");
+                return false;
+            }
+
+            // Simular autenticación exitosa (puedes agregar la lógica real aquí)
+            alert("¡Inicio de sesión exitoso para " + username + "!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Login</h2>
+    <form onsubmit="return validarLogin()">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" required><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required><br>
+
+        <input type="submit" value="Iniciar sesión">
+    </form>
+</body>
+</html>

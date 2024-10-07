@@ -1,0 +1,25 @@
+// Definir colores azules
+$blue-light: #87CEEB;
+$blue-medium: #3498DB;
+$blue-dark: #1F618D;
+
+// Estilos de usuario con colores azules
+body {
+    background-color: $blue-light;
+    color: $blue-dark;
+}
+
+.header {
+    background-color: $blue-medium;
+    color: white;
+}
+
+.button {
+    background-color: $blue-dark;
+    color: white;
+}
+
+.link {
+    color: $blue-medium;
+    text-decoration: underline;
+}
